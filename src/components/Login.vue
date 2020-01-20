@@ -1,21 +1,25 @@
 <template>
 
-    <div>
+    <div id="login">
+
+    
         <div class="container container h-100">
-              <div class="row h-100 justify-content-center align-items-center">
-                <form class="col-4" @submit.prevent="enterGame">
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Username</label>
-                        <input 
-                            class="form-control"
-                            id="exampleInputEmail1"
-                            aria-describedby="emailHelp"
-                            placeholder="Enter email"
-                            v-model="username">
-                        <small id="emailHelp" class="form-text text-muted">If you've played before, we will retrieve your data.</small>
+            <div class="row h-100 justify-content-center align-items-center">
+                <div class="card card-outline-secondary">
+                    <div class="card-header">
+                        <h3 class="mb-0">Login</h3>
                     </div>
-                    <button type="submit" class="btn btn-primary text-center">Submit</button>
-                </form>
+                    <div class="card-body">
+                        <form class="form"  @submit.prevent="enterGame">
+                            <div class="form-group">
+                                <label for="uname1">Username</label>
+                                <input type="text" v-model="username" class="form-control" name="uname1" id="uname1" required="">
+                                <div class="invalid-feedback">Please enter your username or email</div>
+                            </div>
+                            <button type="submit" class="btn btn-success btn-lg float-right" id="btnLogin">Login</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </div>
         
@@ -45,4 +49,8 @@ export default {
 </script>
 
 <style scoped>
+#login {
+    margin-top:150px;
+}
+
 </style>

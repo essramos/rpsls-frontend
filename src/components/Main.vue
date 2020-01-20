@@ -101,10 +101,7 @@
 <script>
     import HTTP from 'src/util/http-common.js';
     export default {
-    name: 'Main',   
-    props: {
-        msg: String
-    },
+    name: 'Main',
     data() {
         return {
             activeIndex: null,
