@@ -25,5 +25,8 @@ npm run test
 npm run lint
 ```
 
+## Note
+make sure VUE_APP_ROOT_API under .env file is same as rpsls-backend url when you run the backend.
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
