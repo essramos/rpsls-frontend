@@ -43,9 +43,6 @@
       </div>
       <div class="col-md-4 align-self-center text-center">
           <h1 class="text-primary">{{message}}</h1>
-        <!-- <div class="d-flex align-self-center text-center">
-            <h1 class="text-primary">{{message}}</h1>
-        </div> -->
       </div>
       <div class="col-md-4 align-self-center text-center">
          <div v-if="loading" class="spinner-grow text-primary" role="status">

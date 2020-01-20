@@ -40,8 +40,6 @@ export default {
                 localStorage.setItem('username', this.username)
                 this.$router.push({name: 'Main'})
             }
-            
-
         }
     }
     
